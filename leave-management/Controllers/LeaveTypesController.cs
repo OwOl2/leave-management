@@ -72,7 +72,7 @@ namespace leave_management.Controllers
                     ModelState.AddModelError("", "Something went wrong...");
                     return View(model);
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index),"Home");
             }
             catch
             {

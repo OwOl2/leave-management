@@ -36,7 +36,7 @@ namespace leave_management
 
             //Add reference for repository and contract files
             services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
-            services.AddScoped<ILeaveHistoryRepository, LeaveHistoryRepository>();
+            services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
             services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
 
             //Calls automapper to get data from data class to View Model class
